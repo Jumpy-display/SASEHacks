@@ -1,9 +1,5 @@
 streamlit
-PIL
-io
-os
-traceback
-time
-cv2
-ultralytics
+Pillow
+opencv-python-headless
 numpy
+ultralytics
