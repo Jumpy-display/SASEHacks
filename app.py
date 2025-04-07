@@ -25,7 +25,7 @@ MAX_IMAGE_SIZE = 640  # pixels
 # --- IMPORTANT: Ensure this path is correct for your system ---
 # Using a raw string literal (r'...') is good practice for Windows paths
 try:
-    Valid_model = YOLO(r'runs\detect\train9\weights\best.pt')
+    Valid_model = YOLO('runs/detect/train9/weights/best.pt')
 except Exception as e:
     st.error(f"Error loading YOLO model: {e}")
     st.error("Please ensure the model path 'runs\\detect\\train9\\weights\\best.pt' is correct relative to where you run Streamlit.")
