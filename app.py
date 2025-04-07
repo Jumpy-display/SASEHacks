@@ -151,6 +151,8 @@ def fix_image(upload):
         # ---- Conditionally display "No cancer detected" ----
         if not detections_found:
             col2.info("No cancer detected")
+        else:
+            col2.info("Cancer detected")
         # ----------------------------------------------------
 
         # Convert processed numpy array (RGB) back to PIL for download function
